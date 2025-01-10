@@ -3,8 +3,14 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #24cdbc;
+    background-color:  #1aa2f1; 
 }
+    section{
+        width: 100%;
+        background-color: #fff;
+        height: 4
+        00%;
+    }
 input{
     padding: 10px;
     width: 200px;
@@ -14,14 +20,14 @@ input{
 }
 button{
     padding: 10px 20px;
-    background-color: #e91b1b;
-    color: white;
+    background-color: #1fdfb5;
+    color: rgba(18, 17, 17, 0.808);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 button:hover{
-    background-color: #28a745;
+    background-color: #8613f0;
 }
 ul{
     list-style-type: none;
@@ -52,7 +58,7 @@ li.completed{
 li button{
     background-color: #dc3545;
     border:none;
-    color: white;
+    color: rgb(60, 197, 224);
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -62,3 +68,11 @@ li button:hover{
 div{
     margin: 50px;
 }
+#task-date{
+    background-color: #1fdfb5;
+  
+}
+#task-name{
+    background-color: #0edba4;
+}
+

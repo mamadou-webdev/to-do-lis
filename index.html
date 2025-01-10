@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Tâches</title>
     <link rel="stylesheet" href="style.css">
-    <title>liste des taches</title>
-    
 </head>
 <body>
-     <div> 
-          <h2>Bienvenue à l'application To-do list</h2>
-          <input type="text" id="task" placeholder="Ajouter une tache">
-          <button onclick="validateForm()">Ajouter</button>
-          <h3>La liste des taches:</h3>
-          <ul id="task-list">
+     <section>
 
-          </ul>
-     </div>
-     <script src="script.js"></script>
+    <h1>Gestion des Tâches</h1>
+
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Nom de la tâche" required>
+        <label for="task-date">Date limite :</label>
+        <input type="date" id="task-date" required>
+
+        <label for="task-category">Catégorie :</label>
+        <select id="task-category">
+            <option value="Travail">Travail</option>
+            <option value="Personnel">Personnel</option>
+            <option value="Autre">Autre</option>
+        </select>
+
+        <label for="task-priority">Priorité :</label>
+        <select id="task-priority">
+            <option value="Basse">Basse</option>
+            <option value="Moyenne">Moyenne</option>
+            <option value="Haute">Haute</option>
+        </select>
+        <button type="submit">Ajouter la tâche</button>
+<input type="text" id="searchInput" placeholder="Rechercher des tâches...">
+<select id="mari">
+    <option value="trier par Priorité">Trier par Priorité</option>
+    <option value="trier par Échéance">Trier par Échéance</option> <!-- Correction du deuxième texte de l'option -->
+</select>  
+<button>tâche terminer</button>
+<button>tâche en cours</button>
+<button onclick="editTask('this')">Modifier</button>
+<ul id="task-list">
+   </form>
+    <div id="tasks-container"></div>
+</section>
+    <script src="script.js"></script>
     
 </body>
 </html>
